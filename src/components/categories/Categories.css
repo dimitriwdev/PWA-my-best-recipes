@@ -1,0 +1,40 @@
+.categories {
+  padding: 20px;
+  min-height: 100vh;
+  height: auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../../assets/bg.webp');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.categoryCard {
+  width: 15%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.categoryCard:hover {
+  transform: scale(1.05);
+}
+.categories img {
+  width: 100%;
+  aspect-ratio: 2/1;
+  border-radius: 5px;
+}
+.categories h4 {
+  color: #fff;
+}

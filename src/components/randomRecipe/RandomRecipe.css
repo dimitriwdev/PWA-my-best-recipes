@@ -1,0 +1,55 @@
+.randomRecipe {
+  min-height: 100vh;
+  height: auto;
+  padding: 20px 20px 50px 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../../assets/bg.webp');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+.randomRecipeHeader {
+  margin: 50px 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.randomRecipeImgContainer {
+  width: 30%;
+}
+.randomRecipe img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+}
+.randomRecipeTitleBtn {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.randomRecipeTitleBtn button {
+  background-color: #ff9f34;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 0.2px;
+  padding: 10px;
+  cursor: pointer;
+}
+.recipeContent {
+  display: flex;
+}
+.recipeIngredients {
+  width: 30%;
+}
+.InstructionsContainer {
+  width: 70%;
+  padding: 0 50px 0 20px;
+  list-style-type: '- ';
+}
+.instructions {
+  margin-bottom: 15px;
+}

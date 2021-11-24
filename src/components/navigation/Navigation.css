@@ -1,0 +1,38 @@
+.navigation {
+  height: 10vh;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 2px solid #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.navigationHeader h1 {
+  margin: 0;
+  font-size: 25px;
+  color: #ff9f34;
+  cursor: pointer;
+}
+.navigationLinks {
+  display: flex;
+}
+.navigationLinks a {
+  color: #fff;
+  text-decoration: none;
+  list-style: none;
+  padding: 10px;
+  margin: 0 5px;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.navigationLinks a:hover {
+  color: #ff9f34;
+}
+.activeClassName {
+  color: #ff9f34;
+}
