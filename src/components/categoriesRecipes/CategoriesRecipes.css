@@ -12,7 +12,7 @@
   background-size: cover;
   background-attachment: fixed;
   color: #fff;
-  width: 100%;
+  /* width: 100%; */
 }
 .categoryRecipeCard {
   background-color: rgba(0, 0, 0, 0.5);
