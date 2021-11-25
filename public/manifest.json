@@ -1,9 +1,9 @@
 {
-  "short_name": "my best recipes",
-  "name": "Cmy best recipes",
+  "short_name": "My best recipes",
+  "name": "My best recipes",
   "icons": [
     {
-      "src": "cooking-favicon-512",
+      "src": "favicon",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }

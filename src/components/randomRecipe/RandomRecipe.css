@@ -4,6 +4,7 @@
   padding: 20px 20px 50px 20px;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url('../../assets/bg.webp');
+  /* Photo by Lukas Blazek on Unsplash */
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -29,27 +30,119 @@
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 20px;
-  text-align: center;
 }
 .randomRecipeTitleBtn button {
-  background-color: #ff9f34;
+  background-color: #ffaa54;
   border: none;
   border-radius: 5px;
   letter-spacing: 0.2px;
   padding: 10px;
+  transition: 0.2s ease;
   cursor: pointer;
+}
+.randomRecipeTitleBtn button:hover {
+  background-color: #ff9f34;
 }
 .recipeContent {
   display: flex;
 }
-.recipeIngredients {
+.recipeIngredientsContainer {
   width: 30%;
+  display: flex;
+  flex-direction: column;
 }
-.InstructionsContainer {
+.recipeIngredients1,
+.recipeIngredients2 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.recipeIngredients1 li p,
+.recipeIngredients2 li p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+.instructionsContainer {
   width: 70%;
-  padding: 0 50px 0 20px;
+  padding: 0 50px 0 0;
+  margin: 0;
+  margin-left: 30px;
   list-style-type: '- ';
 }
 .instructions {
   margin-bottom: 15px;
+}
+span {
+  color: #ffaa54;
+}
+
+@media screen and (max-width: 900px) {
+  .randomRecipeHeader {
+    margin: 50px 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .randomRecipeImgContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .randomRecipeTitleBtn {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .recipeContent {
+    flex-direction: column;
+    align-items: center;
+  }
+  .recipeIngredientsContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .recipeIngredients1,
+  .recipeIngredients2 {
+    width: 50%;
+  }
+  .recipeIngredients1 li p,
+  .recipeIngredients2 li p {
+    font-size: 15px;
+  }
+  .instructionsContainer {
+    width: 80%;
+    padding: 0;
+    margin-left: 20px;
+  }
+  .instructions {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .recipeIngredientsContainer {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .recipeIngredients1,
+  .recipeIngredients2 {
+    width: 50%;
+  }
+  .recipeIngredients1 li p,
+  .recipeIngredients2 li p {
+    font-size: 12px;
+  }
+  .instructionsContainer {
+    width: 90%;
+    margin-left: 10px;
+  }
+  .instructions {
+    font-size: 12px;
+  }
 }

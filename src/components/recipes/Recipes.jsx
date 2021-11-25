@@ -27,109 +27,173 @@ const Recipes = () => {
         </div>
       </div>
       <div className="recipeContent">
-        <div className="recipeIngredients">
-          <p>
-            {recipe.strIngredient1
-              ? '- ' + recipe.strIngredient1 + ': ' + recipe.strMeasure1
-              : null}
-          </p>
-          <p>
-            {recipe.strIngredient2
-              ? '- ' + recipe.strIngredient2 + ': ' + recipe.strMeasure2
-              : null}
-          </p>
-          <p>
-            {recipe.strIngredient3
-              ? '- ' + recipe.strIngredient3 + ': ' + recipe.strMeasure3
-              : null}
-          </p>
-          <p>
-            {recipe.strIngredient4
-              ? '- ' + recipe.strIngredient4 + ': ' + recipe.strMeasure4
-              : null}
-          </p>
-          <p>
-            {recipe.strIngredient5
-              ? '- ' + recipe.strIngredient5 + ': ' + recipe.strMeasure5
-              : null}
-          </p>
-          <p>
-            {recipe.strIngredient6
-              ? '- ' + recipe.strIngredient6 + ': ' + recipe.strMeasure6
-              : null}
-          </p>
-          <p>
-            {recipe.strIngredient7
-              ? '- ' + recipe.strIngredient7 + ': ' + recipe.strMeasure7
-              : null}
-          </p>
-          <p>
-            {recipe.strIngredient8
-              ? '- ' + recipe.strIngredient8 + ': ' + recipe.strMeasure8
-              : null}
-          </p>
-          <p>
-            {recipe.strIngredient9
-              ? '- ' + recipe.strIngredient9 + ': ' + recipe.strMeasure9
-              : null}
-          </p>
-          <p>
-            {recipe.strIngredient10
-              ? '- ' + recipe.strIngredient10 + ': ' + recipe.strMeasure10
-              : null}
-          </p>
-          <p>
-            {recipe.strIngredient11
-              ? '- ' + recipe.strIngredient11 + ': ' + recipe.strMeasure11
-              : null}
-          </p>
-          <p>
-            {recipe.strIngredient12
-              ? '- ' + recipe.strIngredient12 + ': ' + recipe.strMeasure12
-              : null}
-          </p>
-          <p>
-            {recipe.strIngredient13
-              ? '- ' + recipe.strIngredient13 + ': ' + recipe.strMeasure13
-              : null}
-          </p>
-          <p>
-            {recipe.strIngredient14
-              ? '- ' + recipe.strIngredient14 + ': ' + recipe.strMeasure14
-              : null}
-          </p>
-          <p>
-            {recipe.strIngredient15
-              ? '- ' + recipe.strIngredient15 + ': ' + recipe.strMeasure15
-              : null}
-          </p>
-          <p>
-            {recipe.strIngredient16
-              ? '- ' + recipe.strIngredient16 + ': ' + recipe.strMeasure16
-              : null}
-          </p>
-          <p>
-            {recipe.strIngredient17
-              ? '- ' + recipe.strIngredient17 + ': ' + recipe.strMeasure17
-              : null}
-          </p>
-          <p>
-            {recipe.strIngredient18
-              ? '- ' + recipe.strIngredient18 + ': ' + recipe.strMeasure18
-              : null}
-          </p>
-          <p>
-            {recipe.strIngredient19
-              ? '- ' + recipe.strIngredient19 + ': ' + recipe.strMeasure19
-              : null}
-          </p>
-          <p>
-            {recipe.strIngredient20
-              ? '- ' + recipe.strIngredient20 + ': ' + recipe.strMeasure20
-              : null}
-          </p>
+        <div className="recipeIngredientsContainer">
+          <ul className="recipeIngredients1">
+            <li>
+              {recipe.strIngredient1 ? (
+                <p>
+                  {'- ' + recipe.strIngredient1 + ': '}{' '}
+                  <span>{recipe.strMeasure1}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {recipe.strIngredient2 ? (
+                <p>
+                  {'- ' + recipe.strIngredient2 + ': '}{' '}
+                  <span>{recipe.strMeasure2}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {recipe.strIngredient3 ? (
+                <p>
+                  {'- ' + recipe.strIngredient3 + ': '}{' '}
+                  <span>{recipe.strMeasure3}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {recipe.strIngredient4 ? (
+                <p>
+                  {'- ' + recipe.strIngredient4 + ': '}{' '}
+                  <span>{recipe.strMeasure4}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {recipe.strIngredient5 ? (
+                <p>
+                  {'- ' + recipe.strIngredient5 + ': '}{' '}
+                  <span>{recipe.strMeasure5}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {recipe.strIngredient6 ? (
+                <p>
+                  {'- ' + recipe.strIngredient6 + ': '}{' '}
+                  <span>{recipe.strMeasure6}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {recipe.strIngredient7 ? (
+                <p>
+                  {'- ' + recipe.strIngredient7 + ': '}{' '}
+                  <span>{recipe.strMeasure7}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {recipe.strIngredient8 ? (
+                <p>
+                  {'- ' + recipe.strIngredient8 + ': '}{' '}
+                  <span>{recipe.strMeasure8}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {recipe.strIngredient9 ? (
+                <p>
+                  {'- ' + recipe.strIngredient9 + ': '}{' '}
+                  <span>{recipe.strMeasure9}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {recipe.strIngredient10 ? (
+                <p>
+                  {'- ' + recipe.strIngredient10 + ': '}{' '}
+                  <span>{recipe.strMeasure10}</span>
+                </p>
+              ) : null}
+            </li>
+          </ul>
+          <ul className="recipeIngredients2">
+            <li>
+              {recipe.strIngredient11 ? (
+                <p>
+                  {'- ' + recipe.strIngredient11 + ': '}{' '}
+                  <span>{recipe.strMeasure11}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {recipe.strIngredient12 ? (
+                <p>
+                  {'- ' + recipe.strIngredient12 + ': '}{' '}
+                  <span>{recipe.strMeasure12}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {recipe.strIngredient13 ? (
+                <p>
+                  {'- ' + recipe.strIngredient13 + ': '}{' '}
+                  <span>{recipe.strMeasure13}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {recipe.strIngredient14 ? (
+                <p>
+                  {'- ' + recipe.strIngredient14 + ': '}{' '}
+                  <span>{recipe.strMeasure14}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {recipe.strIngredient15 ? (
+                <p>
+                  {'- ' + recipe.strIngredient15 + ': '}{' '}
+                  <span>{recipe.strMeasure15}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {recipe.strIngredient16 ? (
+                <p>
+                  {'- ' + recipe.strIngredient16 + ': '}{' '}
+                  <span>{recipe.strMeasure16}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {recipe.strIngredient17 ? (
+                <p>
+                  {'- ' + recipe.strIngredient17 + ': '}{' '}
+                  <span>{recipe.strMeasure17}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {recipe.strIngredient18 ? (
+                <p>
+                  {'- ' + recipe.strIngredient18 + ': '}{' '}
+                  <span>{recipe.strMeasure18}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {recipe.strIngredient19 ? (
+                <p>
+                  {'- ' + recipe.strIngredient19 + ': '}{' '}
+                  <span>{recipe.strMeasure19}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {recipe.strIngredient20 ? (
+                <p>
+                  {'- ' + recipe.strIngredient20 + ': '}{' '}
+                  <span>{recipe.strMeasure20}</span>
+                </p>
+              ) : null}
+            </li>
+          </ul>
         </div>
-        <ul className="InstructionsContainer">
+        <ul className="instructionsContainer">
           {instructions.map((instruction, index) => {
             return instruction ? (
               <li key={index} className="instructions">

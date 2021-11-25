@@ -11,7 +11,7 @@ const RandomRecipe = () => {
 
   const instructions =
     randomRecipes.strInstructions !== undefined
-      ? randomRecipes.strInstructions.split(/\r?\n/)
+      ? randomRecipes.strInstructions.split('.') // /\r?\n/
       : [];
 
   return (
@@ -26,169 +26,173 @@ const RandomRecipe = () => {
         </div>
       </div>
       <div className="recipeContent">
-        <div className="recipeIngredients">
-          <p>
-            {randomRecipes.strIngredient1
-              ? '- ' +
-                randomRecipes.strIngredient1 +
-                ': ' +
-                randomRecipes.strMeasure1
-              : null}
-          </p>
-          <p>
-            {randomRecipes.strIngredient2
-              ? '- ' +
-                randomRecipes.strIngredient2 +
-                ': ' +
-                randomRecipes.strMeasure2
-              : null}
-          </p>
-          <p>
-            {randomRecipes.strIngredient3
-              ? '- ' +
-                randomRecipes.strIngredient3 +
-                ': ' +
-                randomRecipes.strMeasure3
-              : null}
-          </p>
-          <p>
-            {randomRecipes.strIngredient4
-              ? '- ' +
-                randomRecipes.strIngredient4 +
-                ': ' +
-                randomRecipes.strMeasure4
-              : null}
-          </p>
-          <p>
-            {randomRecipes.strIngredient5
-              ? '- ' +
-                randomRecipes.strIngredient5 +
-                ': ' +
-                randomRecipes.strMeasure5
-              : null}
-          </p>
-          <p>
-            {randomRecipes.strIngredient6
-              ? '- ' +
-                randomRecipes.strIngredient6 +
-                ': ' +
-                randomRecipes.strMeasure6
-              : null}
-          </p>
-          <p>
-            {randomRecipes.strIngredient7
-              ? '- ' +
-                randomRecipes.strIngredient7 +
-                ': ' +
-                randomRecipes.strMeasure7
-              : null}
-          </p>
-          <p>
-            {randomRecipes.strIngredient8
-              ? '- ' +
-                randomRecipes.strIngredient8 +
-                ': ' +
-                randomRecipes.strMeasure8
-              : null}
-          </p>
-          <p>
-            {randomRecipes.strIngredient9
-              ? '- ' +
-                randomRecipes.strIngredient9 +
-                ': ' +
-                randomRecipes.strMeasure9
-              : null}
-          </p>
-          <p>
-            {randomRecipes.strIngredient10
-              ? '- ' +
-                randomRecipes.strIngredient10 +
-                ': ' +
-                randomRecipes.strMeasure10
-              : null}
-          </p>
-          <p>
-            {randomRecipes.strIngredient11
-              ? '- ' +
-                randomRecipes.strIngredient11 +
-                ': ' +
-                randomRecipes.strMeasure11
-              : null}
-          </p>
-          <p>
-            {randomRecipes.strIngredient12
-              ? '- ' +
-                randomRecipes.strIngredient12 +
-                ': ' +
-                randomRecipes.strMeasure12
-              : null}
-          </p>
-          <p>
-            {randomRecipes.strIngredient13
-              ? '- ' +
-                randomRecipes.strIngredient13 +
-                ': ' +
-                randomRecipes.strMeasure13
-              : null}
-          </p>
-          <p>
-            {randomRecipes.strIngredient14
-              ? '- ' +
-                randomRecipes.strIngredient14 +
-                ': ' +
-                randomRecipes.strMeasure14
-              : null}
-          </p>
-          <p>
-            {randomRecipes.strIngredient15
-              ? '- ' +
-                randomRecipes.strIngredient15 +
-                ': ' +
-                randomRecipes.strMeasure15
-              : null}
-          </p>
-          <p>
-            {randomRecipes.strIngredient16
-              ? '- ' +
-                randomRecipes.strIngredient16 +
-                ': ' +
-                randomRecipes.strMeasure16
-              : null}
-          </p>
-          <p>
-            {randomRecipes.strIngredient17
-              ? '- ' +
-                randomRecipes.strIngredient17 +
-                ': ' +
-                randomRecipes.strMeasure17
-              : null}
-          </p>
-          <p>
-            {randomRecipes.strIngredient18
-              ? '- ' +
-                randomRecipes.strIngredient18 +
-                ': ' +
-                randomRecipes.strMeasure18
-              : null}
-          </p>
-          <p>
-            {randomRecipes.strIngredient19
-              ? '- ' +
-                randomRecipes.strIngredient19 +
-                ': ' +
-                randomRecipes.strMeasure19
-              : null}
-          </p>
-          <p>
-            {randomRecipes.strIngredient20
-              ? '- ' +
-                randomRecipes.strIngredient20 +
-                ': ' +
-                randomRecipes.strMeasure20
-              : null}
-          </p>
+        <div className="recipeIngredientsContainer">
+          <ul className="recipeIngredients1">
+            <li>
+              {randomRecipes.strIngredient1 ? (
+                <p>
+                  {'- ' + randomRecipes.strIngredient1 + ': '}{' '}
+                  <span>{randomRecipes.strMeasure1}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {randomRecipes.strIngredient2 ? (
+                <p>
+                  {'- ' + randomRecipes.strIngredient2 + ': '}{' '}
+                  <span>{randomRecipes.strMeasure2}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {randomRecipes.strIngredient3 ? (
+                <p>
+                  {'- ' + randomRecipes.strIngredient3 + ': '}{' '}
+                  <span>{randomRecipes.strMeasure3}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {randomRecipes.strIngredient4 ? (
+                <p>
+                  {'- ' + randomRecipes.strIngredient4 + ': '}{' '}
+                  <span>{randomRecipes.strMeasure4}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {randomRecipes.strIngredient5 ? (
+                <p>
+                  {'- ' + randomRecipes.strIngredient5 + ': '}{' '}
+                  <span>{randomRecipes.strMeasure5}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {randomRecipes.strIngredient6 ? (
+                <p>
+                  {'- ' + randomRecipes.strIngredient6 + ': '}{' '}
+                  <span>{randomRecipes.strMeasure6}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {randomRecipes.strIngredient7 ? (
+                <p>
+                  {'- ' + randomRecipes.strIngredient7 + ': '}{' '}
+                  <span>{randomRecipes.strMeasure7}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {randomRecipes.strIngredient8 ? (
+                <p>
+                  {'- ' + randomRecipes.strIngredient8 + ': '}{' '}
+                  <span>{randomRecipes.strMeasure8}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {randomRecipes.strIngredient9 ? (
+                <p>
+                  {'- ' + randomRecipes.strIngredient9 + ': '}{' '}
+                  <span>{randomRecipes.strMeasure9}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {randomRecipes.strIngredient10 ? (
+                <p>
+                  {'- ' + randomRecipes.strIngredient10 + ': '}{' '}
+                  <span>{randomRecipes.strMeasure10}</span>
+                </p>
+              ) : null}
+            </li>
+          </ul>
+          <ul className="recipeIngredients2">
+            <li>
+              {randomRecipes.strIngredient11 ? (
+                <p>
+                  {'- ' + randomRecipes.strIngredient11 + ': '}{' '}
+                  <span>{randomRecipes.strMeasure11}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {randomRecipes.strIngredient12 ? (
+                <p>
+                  {'- ' + randomRecipes.strIngredient12 + ': '}{' '}
+                  <span>{randomRecipes.strMeasure12}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {randomRecipes.strIngredient13 ? (
+                <p>
+                  {'- ' + randomRecipes.strIngredient13 + ': '}{' '}
+                  <span>{randomRecipes.strMeasure13}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {randomRecipes.strIngredient14 ? (
+                <p>
+                  {'- ' + randomRecipes.strIngredient14 + ': '}{' '}
+                  <span>{randomRecipes.strMeasure14}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {randomRecipes.strIngredient15 ? (
+                <p>
+                  {'- ' + randomRecipes.strIngredient15 + ': '}{' '}
+                  <span>{randomRecipes.strMeasure15}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {randomRecipes.strIngredient16 ? (
+                <p>
+                  {'- ' + randomRecipes.strIngredient16 + ': '}{' '}
+                  <span>{randomRecipes.strMeasure16}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {randomRecipes.strIngredient17 ? (
+                <p>
+                  {'- ' + randomRecipes.strIngredient17 + ': '}{' '}
+                  <span>{randomRecipes.strMeasure17}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {randomRecipes.strIngredient18 ? (
+                <p>
+                  {'- ' + randomRecipes.strIngredient18 + ': '}{' '}
+                  <span>{randomRecipes.strMeasure18}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {randomRecipes.strIngredient19 ? (
+                <p>
+                  {'- ' + randomRecipes.strIngredient19 + ': '}{' '}
+                  <span>{randomRecipes.strMeasure19}</span>
+                </p>
+              ) : null}
+            </li>
+            <li>
+              {randomRecipes.strIngredient20 ? (
+                <p>
+                  {'- ' + randomRecipes.strIngredient20 + ': '}{' '}
+                  <span>{randomRecipes.strMeasure20}</span>
+                </p>
+              ) : null}
+            </li>
+          </ul>
         </div>
-        <ul className="InstructionsContainer">
+        <ul className="instructionsContainer">
           {instructions.map((instruction, index) => {
             return instruction ? (
               <li key={index} className="instructions">

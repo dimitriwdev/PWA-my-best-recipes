@@ -4,6 +4,7 @@
   height: auto;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url('../../assets/bg.webp');
+  /* Photo by Lukas Blazek on Unsplash */
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -27,9 +28,6 @@
   transition: 0.2s ease;
   cursor: pointer;
 }
-.categoryCard:hover {
-  transform: scale(1.05);
-}
 .categories img {
   width: 100%;
   aspect-ratio: 2/1;
@@ -37,4 +35,18 @@
 }
 .categories h4 {
   color: #fff;
+  transition: 0.2s ease;
+}
+.categoryCard:hover h4 {
+  color: #ff9f34;
+}
+@media screen and (max-width: 900px) {
+  .categoryCard {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .categoryCard {
+    width: 100%;
+  }
 }
