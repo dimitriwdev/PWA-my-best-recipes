@@ -14,7 +14,7 @@ const Categories = () => {
     <div className="categories">
       {categories.map((category) => (
         <Link
-          to={/category/ + category.strCategory}
+          to={/categories/ + category.strCategory}
           key={category.idCategory}
           className="categoryCard"
         >

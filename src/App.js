@@ -8,7 +8,6 @@ import RandomRecipe from './components/randomRecipe/RandomRecipe';
 import Footer from './components/footer/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ScrollToTop from './components/scrollToTop/ScrollToTop';
-import './app.css';
 
 const App = () => {
   return (
@@ -22,7 +21,7 @@ const App = () => {
           <Route exact path="/categories" element={<Categories />} />
           <Route
             exact
-            path="/category/:categoryRecipe"
+            path="/categories/:categoryRecipe"
             element={<CategoriesRecipes />}
           />
           <Route exact path="/random-recipe" element={<RandomRecipe />} />
