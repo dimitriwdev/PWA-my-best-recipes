@@ -20,7 +20,7 @@
 .navigationHeader h1 {
   margin: 0;
   margin-left: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-size: 25px;
   color: #ffaa54;
   transition: 0.2s ease;
@@ -29,7 +29,9 @@
   color: #ff9f34;
 }
 .navigationHeader img {
-  width: 70px;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5px;
 }
 .navigationLinks {
   display: flex;
@@ -103,5 +105,6 @@
   }
   .navigationHeader img {
     width: 40px;
+    height: 40px;
   }
 }

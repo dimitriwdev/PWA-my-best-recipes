@@ -2,11 +2,19 @@ import React, { useContext, useCallback, useState } from 'react';
 import { myContext } from '../context/Context';
 import { Link } from 'react-router-dom';
 import './Home.css';
+import bg from '../../assets/bg.webp';
+// Photo by Lukas Blazek on Unsplash
 
 const Home = () => {
   const [searchTerm, setSearchTerm] = useState('');
-
   const { fetchHomePageRecipes, recipes } = useContext(myContext);
+  let divStyle = {
+    background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bg})`,
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    backgroundAttachment: 'fixed',
+    backgroundRepeat: 'no-repeat',
+  };
 
   const handleFetchRecipe = useCallback(
     (e) => {
@@ -18,7 +26,7 @@ const Home = () => {
   );
 
   return (
-    <div className="home">
+    <div className="home" style={divStyle}>
       <form className="homeSearch" onSubmit={handleFetchRecipe}>
         <input
           className="homeSearchInput"

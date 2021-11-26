@@ -2,12 +2,6 @@
   padding: 20px;
   min-height: 100vh;
   height: auto;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('../../assets/bg.webp');
-  /* Photo by Lukas Blazek on Unsplash */
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
   color: #fff;
   display: flex;
   flex-wrap: wrap;

@@ -65,25 +65,13 @@ const Navigation = () => {
               </div>
               <div className="navigationMobileList">
                 <ul className="navigationMobileLinks">
-                  <Link
-                    to="/"
-                    activeStyle={{ color: 'orange' }}
-                    onClick={handleToggleMenu}
-                  >
+                  <Link to="/" onClick={handleToggleMenu}>
                     <li>Home</li>
                   </Link>
-                  <Link
-                    to="/categories"
-                    activeStyle={{ color: 'orange' }}
-                    onClick={handleToggleMenu}
-                  >
+                  <Link to="/categories" onClick={handleToggleMenu}>
                     <li>Categories</li>
                   </Link>
-                  <Link
-                    to="/random-recipe"
-                    activeStyle={{ color: 'orange' }}
-                    onClick={handleToggleMenu}
-                  >
+                  <Link to="/random-recipe" onClick={handleToggleMenu}>
                     <li>Random recipe</li>
                   </Link>
                 </ul>
