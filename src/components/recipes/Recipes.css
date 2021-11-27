@@ -73,6 +73,13 @@ span {
   .recipeHeader {
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 0;
+  }
+  .recipe img {
+    margin-left: 0;
+  }
+  .recipeTitle {
+    margin: 0;
   }
   .recipeImgContainer {
     width: 100%;

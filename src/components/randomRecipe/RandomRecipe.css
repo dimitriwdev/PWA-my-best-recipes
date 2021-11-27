@@ -87,8 +87,11 @@ span {
     flex-direction: column;
     justify-content: center;
   }
+  .randomRecipe img {
+    margin-left: 0;
+  }
   .randomRecipeTitleBtn {
-    margin-bottom: 0;
+    margin: 0;
   }
   .randomRecipeImgContainer {
     width: 100%;
